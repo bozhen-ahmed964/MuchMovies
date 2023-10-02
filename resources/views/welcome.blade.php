@@ -20,7 +20,7 @@
 
     @foreach ($data as $item)
         <div class="container" style="margin-top: 25px;">
-            <h3>{{ $item->movie_name }}</h3>
+            <h3>{{ $item->series_name }}</h3>
             <p>{{ $item->description }}</p>
             <h5>{{ Carbon\Carbon::parse($item->release_year)->format('Y-m-d') }}</h5>
             <img src="{{ $item->img }}">
